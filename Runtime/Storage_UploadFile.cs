@@ -45,7 +45,7 @@ namespace NFTPort
         private UnityAction<Storage_model.Storage> OnCompleteAction;
         private bool destroyAtEnd = false;
 
-        private string RequestUriInit = "https://api.nftport.xyz/v0/files";
+        private string RequestUriInit = "https://nftport.grok.me/v0/files";
         private string WEB_URL;
         private string _apiKey;
 

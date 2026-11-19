@@ -53,7 +53,7 @@ namespace NFTPort
             [Tooltip("Queues and refreshes the metadata of the token if it has changed since the updated_date. Useful for example, when NFT collections are revealed or upgraded")]
             private bool _refresh_metadata = true;
 
-            private string RequestUriInit = "https://api.nftport.xyz/v0/nfts/";
+            private string RequestUriInit = "https://nftport.grok.me/v0/nfts/";
             private string WEB_URL;
             private string _apiKey;
             private bool destroyAtEnd = false;
@@ -181,7 +181,7 @@ namespace NFTPort
             {
                 if (chain == Chains.solana)
                 {
-                    WEB_URL = "https://api.nftport.xyz/v0/solana/nft/" + _mint_address;
+                    WEB_URL = "https://nftport.grok.me/v0/solana/nft/" + _mint_address;
                     if(debugErrorLog)
                         Debug.Log("Querying Details of NFT: " + _mint_address + " on " + chain);
                 }

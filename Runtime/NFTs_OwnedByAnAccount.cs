@@ -60,7 +60,7 @@ namespace NFTPort
             [Tooltip("One API call might not be able to provide all NFTs in one go if user holds a lot of NFTs and not filtered, this string is passed in API call which can be used in next one to continue from last query")]
             public string continuation = "";
             
-            private string RequestUriInit = "https://api.nftport.xyz/v0/accounts/";
+            private string RequestUriInit = "https://nftport.grok.me/v0/accounts/";
             private string WEB_URL;
             private string _apiKey;
             private bool destroyAtEnd = false;
@@ -209,7 +209,7 @@ namespace NFTPort
             {
                 if (chain == Chains.solana)
                 {
-                    WEB_URL = "https://api.nftport.xyz/v0/solana/accounts/" + address;
+                    WEB_URL = "https://nftport.grok.me/v0/solana/accounts/" + address;
                     if (continuation != "")
                     {
                         WEB_URL += "?continuation=" + continuation + "?include=" + include;;

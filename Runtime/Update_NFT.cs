@@ -64,7 +64,7 @@ namespace NFTPort
             private UnityAction<string> OnErrorAction;
             private UnityAction<Minted_model> OnCompleteAction;
             
-            private string RequestUriInit = "https://api.nftport.xyz/v0/mints/customizable";
+            private string RequestUriInit = "https://nftport.grok.me/v0/mints/customizable";
             private string WEB_URL;
             private string _apiKey;
             private bool destroyAtEnd = false;

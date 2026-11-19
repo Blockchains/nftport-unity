@@ -55,7 +55,7 @@ namespace NFTPort
             public int page_number = 0;
 
             
-            private string RequestUriInit = "https://api.nftport.xyz/v0/nfts/";
+            private string RequestUriInit = "https://nftport.grok.me/v0/nfts/";
             private string WEB_URL;
             private string _apiKey;
             private bool destroyAtEnd = false;
@@ -188,7 +188,7 @@ namespace NFTPort
             {
                 if (chain == Chains.solana)
                 {
-                    WEB_URL = "https://api.nftport.xyz/v0/solana/nfts/" + collection;
+                    WEB_URL = "https://nftport.grok.me/v0/solana/nfts/" + collection;
                     if (page_number != 0)
                     {
                         WEB_URL = WEB_URL + "?page_number=" + page_number.ToString() + "&include=" + include.ToString().ToLower();;

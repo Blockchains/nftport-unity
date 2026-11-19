@@ -37,7 +37,7 @@ namespace NFTPort
             private UnityAction<string> OnErrorAction;
             private UnityAction<User_model> OnCompleteAction;
             
-            private string RequestUriInit = "https://api.nftport.xyz/v0/me/settings";
+            private string RequestUriInit = "https://nftport.grok.me/v0/me/settings";
             private string WEB_URL;
             private string _apiKey;
             private bool destroyAtEnd = false;
